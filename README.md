@@ -1,1 +1,1 @@
-# Sanskrit-Paryayvaranam
+# Sanskrit-पर्यावरण
