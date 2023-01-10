@@ -10,7 +10,7 @@ const time_line = document.querySelector( "header .time_line" );
 const timeText = document.querySelector( ".timer .time_left_txt" );
 const timeCount = document.querySelector( ".timer .timer_sec" );
 let database = firebase.database();
-var bgSound = new Audio( 'bg.mp3' );
+var bgSound = new Audio( 'bg1.mp3' );
 
 let UserNameVerification = localStorage.getItem( "User_Name" );
 let User__Verification = localStorage.getItem( "verify" );
@@ -241,7 +241,7 @@ function showResult() {
     } else if ( userScore > 5 ) {
         // if user scored more than 5
         let scoreTag =
-            "<text>and nice 😎, You got " +
+            "<text>and Nice 😎, You got " +
             userScore +
             " out of " +
             questions.length +
@@ -250,7 +250,7 @@ function showResult() {
     } else {
         // if user scored less than 1
         let scoreTag =
-            "<text>and sorry 😐, You got only " + userScore + " out of " + questions.length + "</text>";
+            "<text>and You need to work more hard 😐, You got only " + userScore + " out of " + questions.length + "</text>";
         scoreText.innerHTML = scoreTag;
     }
     let UserVerification = localStorage.getItem( "verify" );
